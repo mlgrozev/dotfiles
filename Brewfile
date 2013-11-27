@@ -39,7 +39,7 @@ install lynx
 install node
 install pigz
 install rename
-install rhino
+#install rhino
 install tree
 install webkit2png
 install zopfli
