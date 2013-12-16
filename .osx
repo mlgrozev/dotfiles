@@ -664,6 +664,26 @@ defaults write com.twitter.twitter-mac ShowFullNames -bool true
 # Hide the app in the background if it’s not the front-most window
 defaults write com.twitter.twitter-mac HideInBackground -bool true
 
+# ==============================================
+# Disable CD & DVD actions
+# ==============================================
+echo "Setting CD & DVD preferences"
+
+# Disable blank CD automatic action.
+defaults write com.apple.digihub com.apple.digihub.blank.cd.appeared -dict action 1
+
+# Disable music CD automatic action.
+defaults write com.apple.digihub com.apple.digihub.cd.music.appeared -dict action 1
+
+# Disable picture CD automatic action.
+defaults write com.apple.digihub com.apple.digihub.cd.picture.appeared -dict action 1
+
+# Disable blank DVD automatic action.
+defaults write com.apple.digihub com.apple.digihub.blank.dvd.appeared -dict action 1
+
+# Disable video DVD automatic action.
+defaults write com.apple.digihub com.apple.digihub.dvd.video.appeared -dict action 1
+
 ###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
