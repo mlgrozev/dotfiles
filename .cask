@@ -18,7 +18,8 @@ installcask spotify
 installcask sublime-text
 installcask subtitles
 installcask the-unarchiver
-installcask u-torrent
+installcask tower
+installcask utorrent
 installcask vagrant
 installcask virtualbox
 installcask vlc

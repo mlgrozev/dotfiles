@@ -26,7 +26,7 @@ tap homebrew/dupes
 install homebrew/dupes/grep
 tap josegonzalez/homebrew-php
 install php55
-install install josegonzalez/php/composer
+install josegonzalez/php/composer
 # This formula didn’t work well last time I tried it:
 #install homebrew/dupes/screen
 
@@ -34,6 +34,7 @@ install install josegonzalez/php/composer
 install ack
 #install exiv2
 install git
+install hub
 #install imagemagick
 install lynx
 install node
