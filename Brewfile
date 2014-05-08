@@ -1,3 +1,6 @@
+# Install command-line tools using Homebrew
+# Usage: `brew bundle Brewfile`
+
 # Make sure we’re using the latest Homebrew
 update
 
@@ -7,8 +10,12 @@ upgrade
 # Install GNU core utilities (those that come with OS X are outdated)
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 install coreutils
-# Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
+# Install some other useful utilities like `sponge`
+install moreutils
+# Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed
 install findutils
+# Install GNU `sed`, overwriting the built-in `sed`
+install gnu-sed --default-names
 # Install Bash 4
 install bash
 
@@ -22,10 +29,8 @@ install wget --enable-iri
 
 # Install more recent versions of some OS X tools
 install vim --override-system-vi
-tap homebrew/dupes
 install homebrew/dupes/grep
-tap josegonzalez/homebrew-php
-install php55
+install homebrew/php/php55 --with-gmp
 install josegonzalez/php/composer
 # This formula didn’t work well last time I tried it:
 #install homebrew/dupes/screen
@@ -37,16 +42,21 @@ install git
 install hub
 #install imagemagick
 install lynx
+install nmap
+install ucspi-tcp # `tcpserver` et al.
 install node
+install p7zip
 install pigz
+install pv
 install rename
 #install rhino
+install sqlmap
 install tree
 install webkit2png
+#install xpdf
 #install zopfli
 
-tap homebrew/versions
-#install lua52
+#install homebrew/versions/lua52
 
 # Remove outdated versions from the cellar
 cleanup
