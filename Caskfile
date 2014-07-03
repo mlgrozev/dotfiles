@@ -4,19 +4,24 @@
 install caskroom/cask/brew-cask
 tap caskroom/versions
 
-cask install ccleaner
-cask install github
-cask install google-chrome
-cask install google-hangouts
-cask install lastpass-universal
-cask install rescue-time
-cask install sequel-pro
-cask install skype
-cask install spotify
-cask install sublime-text
-cask install subtitles
-cask install the-unarchiver
-cask install tower
-cask install vagrant
-cask install virtualbox
-cask install vlc
+cask install ccleaner 2> /dev/null
+cask install spotify 2> /dev/null
+cask install sequel-pro 2> /dev/null
+cask install skype 2> /dev/null
+cask install lastpass-universal 2> /dev/null
+cask install google-hangouts 2> /dev/null
+cask install github 2> /dev/null
+cask install tower 2> /dev/null
+cask install dropbox 2> /dev/null
+cask install google-chrome 2> /dev/null
+cask install google-chrome-canary 2> /dev/null
+cask install imagealpha 2> /dev/null
+cask install imageoptim 2> /dev/null
+cask install macvim 2> /dev/null
+cask install miro-video-converter 2> /dev/null
+cask install sublime-text 2> /dev/null
+cask install the-unarchiver 2> /dev/null
+cask install torbrowser 2> /dev/null
+cask install ukelele 2> /dev/null
+cask install virtualbox 2> /dev/null
+cask install vlc 2> /dev/null

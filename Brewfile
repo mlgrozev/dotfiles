@@ -17,7 +17,9 @@ install findutils
 # Install GNU `sed`, overwriting the built-in `sed`
 install gnu-sed --default-names
 # Install Bash 4
+# Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before running `chsh`.
 install bash
+install bash-completion
 
 # Install wget with IRI support
 install wget --enable-iri
@@ -37,6 +39,7 @@ install josegonzalez/php/composer
 
 # Install other useful binaries
 install ack
+install bfg
 #install exiv2
 install git
 install hub
@@ -52,6 +55,7 @@ install rename
 #install rhino
 install sqlmap
 install tree
+install ucspi-tcp # `tcpserver` et al.
 install webkit2png
 #install xpdf
 #install zopfli
