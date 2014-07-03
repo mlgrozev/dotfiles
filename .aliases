@@ -11,7 +11,7 @@ alias d="cd ~/dotfiles"
 alias dc="cd ~/Documents"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias p="cd ~/Projects"
+alias p="cd /Volumes/Projects"
 alias g="hub"
 alias gs="git status --short --branch"
 alias gd="git d"
@@ -25,6 +25,7 @@ alias o="open"
 alias oo="open ."
 alias b="brew"
 alias vg="vagrant"
+alias vaprobash="curl -L http://bit.ly/vaprobash > Vagrantfile"
 
 # Enable git command  autocompletion for 'g' as well
 complete -o default -o nospace -F _git g
